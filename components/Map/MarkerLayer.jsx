@@ -8,6 +8,7 @@ import L from "leaflet";
 function createCustomIcon(category, isSelected = false) {
   const iconMap = {
     masjid: { emoji: "🕌", color: "#2d6a4f", bg: "#d8f3dc" },
+    gereja: { emoji: "⛪", color: "#2d6a4f", bg: "#d8f3dc" },
     sekolah: { emoji: "🏫", color: "#1565c0", bg: "#e3f2fd" },
     sungai: { emoji: "🌊", color: "#0077b6", bg: "#caf0f8" },
     lapangan: { emoji: "🏟️", color: "#4caf50", bg: "#e8f5e9" },
