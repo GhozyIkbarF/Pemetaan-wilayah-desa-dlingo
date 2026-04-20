@@ -1,16 +1,17 @@
 // Data Lokasi Desa Dlingo, Kec. Mojosongo, Kab. Boyolali
-// Koordinat berdasarkan area geografis desa (approx. -7.455°, 110.832°)
+// Koordinat berdasarkan area geografis desa: -7.468337, 110.589480
+// Referensi: https://maps.app.goo.gl/jSWKPcH4FFakDbGr8
 
-export const VILLAGE_CENTER = [-7.455, 110.832];
+export const VILLAGE_CENTER = [-7.4683, 110.5895];
 
 export const VILLAGE_BOUNDARY = [
-  [-7.4480, 110.8270],
-  [-7.4480, 110.8380],
-  [-7.4590, 110.8390],
-  [-7.4620, 110.8340],
-  [-7.4600, 110.8270],
-  [-7.4530, 110.8250],
-  [-7.4480, 110.8270],
+  [-7.4630, 110.5840],
+  [-7.4630, 110.5960],
+  [-7.4700, 110.5975],
+  [-7.4750, 110.5940],
+  [-7.4740, 110.5840],
+  [-7.4690, 110.5820],
+  [-7.4630, 110.5840],
 ];
 
 export const CATEGORIES = {
@@ -88,7 +89,7 @@ export const LOCATIONS = [
     name: "Masjid Nurul Huda Dlingo",
     description: "Masjid utama Desa Dlingo, digunakan untuk sholat berjamaah dan kegiatan keagamaan masyarakat.",
     address: "Dusun Dlingo, Desa Dlingo",
-    coordinates: [-7.4540, 110.8310],
+    coordinates: [-7.4670, 110.5900],
     year: 1985,
   },
   {
@@ -97,7 +98,7 @@ export const LOCATIONS = [
     name: "Masjid Al-Ikhlas",
     description: "Masjid di wilayah dusun sebelah utara desa.",
     address: "Dusun Lor, Desa Dlingo",
-    coordinates: [-7.4500, 110.8330],
+    coordinates: [-7.4655, 110.5920],
     year: 1992,
   },
   {
@@ -106,7 +107,7 @@ export const LOCATIONS = [
     name: "Musholla Baiturrohman",
     description: "Musholla warga untuk kegiatan sholat dan pengajian rutin.",
     address: "RT 03, Desa Dlingo",
-    coordinates: [-7.4570, 110.8355],
+    coordinates: [-7.4700, 110.5875],
     year: 2001,
   },
   {
@@ -115,7 +116,7 @@ export const LOCATIONS = [
     name: "Masjid Al-Hidayah",
     description: "Masjid di bagian selatan desa dengan kapasitas 200 jamaah.",
     address: "Dusun Kidul, Desa Dlingo",
-    coordinates: [-7.4600, 110.8320],
+    coordinates: [-7.4720, 110.5905],
     year: 1978,
   },
 
@@ -126,7 +127,7 @@ export const LOCATIONS = [
     name: "SD Negeri Dlingo 1",
     description: "Sekolah dasar negeri utama di Desa Dlingo dengan 6 kelas.",
     address: "Jl. Dlingo No. 12, Desa Dlingo",
-    coordinates: [-7.4530, 110.8305],
+    coordinates: [-7.4678, 110.5888],
     level: "SD",
     year: 1965,
   },
@@ -136,7 +137,7 @@ export const LOCATIONS = [
     name: "SD Negeri Dlingo 2",
     description: "Sekolah dasar negeri cabang di wilayah timur desa.",
     address: "Dusun Wetan, Desa Dlingo",
-    coordinates: [-7.4555, 110.8370],
+    coordinates: [-7.4695, 110.5935],
     level: "SD",
     year: 1975,
   },
@@ -146,7 +147,7 @@ export const LOCATIONS = [
     name: "TK Dharma Wanita Dlingo",
     description: "Taman kanak-kanak yang dikelola PKK Desa Dlingo.",
     address: "Dekat Kantor Desa Dlingo",
-    coordinates: [-7.4518, 110.8320],
+    coordinates: [-7.4665, 110.5910],
     level: "TK",
     year: 1990,
   },
@@ -156,7 +157,7 @@ export const LOCATIONS = [
     name: "MI Nurul Islam Dlingo",
     description: "Madrasah Ibtidaiyah berbasis pesantren untuk pendidikan agama Islam.",
     address: "Dusun Tengah, Desa Dlingo",
-    coordinates: [-7.4575, 110.8295],
+    coordinates: [-7.4688, 110.5865],
     level: "MI",
     year: 1982,
   },
@@ -168,7 +169,7 @@ export const LOCATIONS = [
     name: "Sungai Serang",
     description: "Sungai utama yang mengalir di sisi barat desa, digunakan untuk irigasi pertanian.",
     address: "Batas Barat Desa Dlingo",
-    coordinates: [-7.4545, 110.8275],
+    coordinates: [-7.4683, 110.5855],
     type: "Sungai Utama",
   },
   {
@@ -177,7 +178,7 @@ export const LOCATIONS = [
     name: "Saluran Irigasi Dlingo",
     description: "Saluran irigasi pertanian yang mengairi sawah-sawah di Desa Dlingo.",
     address: "Area Persawahan Dlingo",
-    coordinates: [-7.4610, 110.8300],
+    coordinates: [-7.4730, 110.5880],
     type: "Saluran Irigasi",
   },
   {
@@ -186,7 +187,7 @@ export const LOCATIONS = [
     name: "Kali Mati",
     description: "Aliran sungai kecil di sisi timur yang aktif saat musim hujan.",
     address: "Dusun Wetan, Desa Dlingo",
-    coordinates: [-7.4490, 110.8365],
+    coordinates: [-7.4648, 110.5950],
     type: "Anak Sungai",
   },
 
@@ -197,7 +198,7 @@ export const LOCATIONS = [
     name: "Lapangan Sepak Bola Dlingo",
     description: "Lapangan sepak bola utama desa, digunakan untuk pertandingan antar dusun dan HUT RI.",
     address: "Tengah Desa Dlingo",
-    coordinates: [-7.4550, 110.8335],
+    coordinates: [-7.4683, 110.5895],
     type: "Sepak Bola",
   },
   {
@@ -206,7 +207,7 @@ export const LOCATIONS = [
     name: "Lapangan Voli Rukun Warga",
     description: "Lapangan bola voli untuk kegiatan olahraga warga RW 02.",
     address: "RW 02, Desa Dlingo",
-    coordinates: [-7.4510, 110.8345],
+    coordinates: [-7.4660, 110.5905],
     type: "Bola Voli",
   },
   {
@@ -215,7 +216,7 @@ export const LOCATIONS = [
     name: "Lapangan Badminton Pemuda",
     description: "Lapangan badminton yang dikelola Karang Taruna Desa Dlingo.",
     address: "Dusun Lor, Desa Dlingo",
-    coordinates: [-7.4495, 110.8310],
+    coordinates: [-7.4650, 110.5880],
     type: "Badminton",
   },
 
@@ -226,7 +227,7 @@ export const LOCATIONS = [
     name: "Jalan Raya Mojosongo-Dlingo",
     description: "Jalan utama penghubung pusat kecamatan Mojosongo dengan Desa Dlingo.",
     address: "Jalur Utama Desa Dlingo",
-    coordinates: [-7.4520, 110.8290],
+    coordinates: [-7.4663, 110.5870],
     type: "Jalan Kabupaten",
     condition: "Baik",
   },
@@ -236,7 +237,7 @@ export const LOCATIONS = [
     name: "Jalan Poros Desa Dlingo",
     description: "Jalan utama yang menghubungkan antar dusun di Desa Dlingo.",
     address: "Pusat Desa Dlingo",
-    coordinates: [-7.4555, 110.8320],
+    coordinates: [-7.4693, 110.5898],
     type: "Jalan Desa",
     condition: "Baik",
   },
@@ -246,7 +247,7 @@ export const LOCATIONS = [
     name: "Jalan Usaha Tani Dlingo",
     description: "Jalan tanah/makadam menuju area pertanian dan ladang warga.",
     address: "Area Pertanian Dlingo",
-    coordinates: [-7.4595, 110.8355],
+    coordinates: [-7.4715, 110.5920],
     type: "Jalan Usaha Tani",
     condition: "Perlu Perbaikan",
   },
@@ -258,7 +259,7 @@ export const LOCATIONS = [
     name: "Puskesmas Pembantu Dlingo",
     description: "Pustu yang melayani warga Desa Dlingo untuk pelayanan kesehatan dasar.",
     address: "Jl. Dlingo, Desa Dlingo",
-    coordinates: [-7.4535, 110.8325],
+    coordinates: [-7.4675, 110.5908],
     type: "Puskesmas Pembantu",
   },
   {
@@ -267,7 +268,7 @@ export const LOCATIONS = [
     name: "Posyandu Mawar",
     description: "Pos pelayanan terpadu untuk balita dan ibu hamil di RW 01.",
     address: "RW 01, Desa Dlingo",
-    coordinates: [-7.4505, 110.8340],
+    coordinates: [-7.4658, 110.5892],
     type: "Posyandu",
   },
   {
@@ -276,7 +277,7 @@ export const LOCATIONS = [
     name: "Posyandu Melati",
     description: "Pos pelayanan terpadu untuk wilayah selatan desa.",
     address: "Dusun Kidul, Desa Dlingo",
-    coordinates: [-7.4590, 110.8315],
+    coordinates: [-7.4710, 110.5885],
     type: "Posyandu",
   },
 
@@ -287,7 +288,7 @@ export const LOCATIONS = [
     name: "Kantor Kepala Desa Dlingo",
     description: "Balai desa sebagai pusat pelayanan administrasi dan pemerintahan Desa Dlingo.",
     address: "Jl. Raya Dlingo No. 1",
-    coordinates: [-7.4525, 110.8330],
+    coordinates: [-7.4683, 110.5895],
     type: "Balai Desa",
     phone: "-",
   },
@@ -297,7 +298,7 @@ export const LOCATIONS = [
     name: "Balai Dusun Lor",
     description: "Tempat pertemuan warga dan kegiatan dusun wilayah utara.",
     address: "Dusun Lor, Desa Dlingo",
-    coordinates: [-7.4490, 110.8320],
+    coordinates: [-7.4648, 110.5900],
     type: "Balai Dusun",
   },
   {
@@ -306,7 +307,7 @@ export const LOCATIONS = [
     name: "Balai Dusun Kidul",
     description: "Tempat pertemuan warga dan kegiatan dusun wilayah selatan.",
     address: "Dusun Kidul, Desa Dlingo",
-    coordinates: [-7.4600, 110.8340],
+    coordinates: [-7.4718, 110.5900],
     type: "Balai Dusun",
   },
 
@@ -317,7 +318,7 @@ export const LOCATIONS = [
     name: "Pasar Desa Dlingo",
     description: "Pasar tradisional yang buka setiap Pon dan Kliwon, menjual kebutuhan sehari-hari.",
     address: "Pusat Desa Dlingo",
-    coordinates: [-7.4545, 110.8315],
+    coordinates: [-7.4680, 110.5918],
     type: "Pasar Tradisional",
     schedule: "Hari Pon & Kliwon",
   },
@@ -327,7 +328,7 @@ export const LOCATIONS = [
     name: "Koperasi Unit Desa (KUD) Dlingo",
     description: "Koperasi yang melayani simpan pinjam dan kebutuhan pertanian warga.",
     address: "Jl. Dlingo, Desa Dlingo",
-    coordinates: [-7.4515, 110.8310],
+    coordinates: [-7.4662, 110.5888],
     type: "Koperasi",
   },
   {
@@ -336,7 +337,7 @@ export const LOCATIONS = [
     name: "Warung Serba Ada Pak Harto",
     description: "Salah satu warung kelontong terbesar di desa yang menjual berbagai kebutuhan pokok.",
     address: "RT 02, Desa Dlingo",
-    coordinates: [-7.4560, 110.8345],
+    coordinates: [-7.4700, 110.5910],
     type: "Warung / Toko",
   },
 ];
