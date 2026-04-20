@@ -257,7 +257,56 @@ export const LOCATIONS = [
     address: "Tengah Desa Dlingo",
     coordinates: [-7.502309994398843, 110.64367134172016],
     type: "Sepak Bola",
-  }
+  },
+  {
+    id: 14,
+    category: "lapangan",
+    name: "Lapangan Voli Mbalong",
+    description: "Lapangan voli.",
+    address: "GUNUNG SARI, RT.25/RW.05, Dusun IV, Dlingo, Kec. Mojosongo, Kabupaten Boyolali, Jawa Tengah 57322",
+    coordinates: [-7.5056183748465415, 110.63302641036843],
+    year: 1985,
+  },
+
+  // ===== PENDIDIKAN =====
+  {
+    id: 10,
+    category: "sekolah",
+    name: "SDN 1 Dlingo",
+    description: "Sekolah dasar.",
+    address: "Dusun II, Dlingo, Kec. Mojosongo, Kabupaten Boyolali, Jawa Tengah 57322",
+    coordinates: [-7.502293993425568, 110.6442682801828],
+    year: 1985,
+  },
+  {
+    id: 11,
+    category: "sekolah",
+    name: "SD Krajan",
+    description: "Sekolah Dasar.",
+    address: "JL. Gunung Sari, RT. 3, RW. 5, Dlingo, Mojosongo, Dusun IV, Dlingo, Kec. Boyolali, Kabupaten Boyolali, Jawa Tengah 57322",
+    coordinates: [-7.506761986182664, 110.63374191125175],
+    year: 1985,
+  },
+  {
+    id: 12,
+    category: "sekolah",
+    name: "TK Pertiwi 2 Dlingo",
+    description: "Taman Kanak-kanak.",
+    address: "JL Purworejo, Dlingo, Mojosongo, Dusun IV, Dlingo, Kec. Boyolali, Kabupaten Boyolali, Jawa Tengah 57322",
+    coordinates: [-7.502569216084299, 110.63663943553347],
+    year: 1985,
+  },
+  {
+    id: 13,
+    category: "sekolah",
+    name: "SD N Dlingo 2",
+    description: "Sekolah Dasar.",
+    address: "Dusun III, Dlingo, Kec. Mojosongo, Kabupaten Boyolali, Jawa Tengah 57322",
+    coordinates: [-7.507411532239537, 110.646026664849],
+    year: 1985,
+  },
+
+
 
   // // ===== SUNGAI =====
   // {
@@ -378,35 +427,35 @@ export const LOCATIONS = [
   //   type: "Posyandu",
   // },
 
-  // // ===== PEMERINTAHAN =====
-  // {
-  //   id: 21,
-  //   category: "pemerintahan",
-  //   name: "Kantor Kepala Desa Dlingo",
-  //   description: "Balai desa sebagai pusat pelayanan administrasi dan pemerintahan Desa Dlingo.",
-  //   address: "Jl. Raya Dlingo No. 1",
-  //   coordinates: [-7.4683, 110.5895],
-  //   type: "Balai Desa",
-  //   phone: "-",
-  // },
-  // {
-  //   id: 22,
-  //   category: "pemerintahan",
-  //   name: "Balai Dusun Lor",
-  //   description: "Tempat pertemuan warga dan kegiatan dusun wilayah utara.",
-  //   address: "Dusun Lor, Desa Dlingo",
-  //   coordinates: [-7.4648, 110.5900],
-  //   type: "Balai Dusun",
-  // },
-  // {
-  //   id: 23,
-  //   category: "pemerintahan",
-  //   name: "Balai Dusun Kidul",
-  //   description: "Tempat pertemuan warga dan kegiatan dusun wilayah selatan.",
-  //   address: "Dusun Kidul, Desa Dlingo",
-  //   coordinates: [-7.4718, 110.5900],
-  //   type: "Balai Dusun",
-  // },
+  // ===== PEMERINTAHAN =====
+  {
+    id: 21,
+    category: "pemerintahan",
+    name: "Kantor Desa Dlingo",
+    description: "Balai desa sebagai pusat pelayanan administrasi dan pemerintahan Desa Dlingo.",
+    address: "Dlingo, Mojosongo, Dusun III, Dlingo, Kec. Boyolali, Kabupaten Boyolali, Jawa Tengah 57322",
+    coordinates: [-7.503975453123585, 110.642998647089665895],
+    type: "Balai Desa",
+    phone: "-",
+  },
+  {
+    id: 22,
+    category: "pemerintahan",
+    name: "Balai Desa Dlingo",
+    description: "Tempat pertemuan warga dan kegiatan dusun wilayah utara.",
+    address: "Dusun IV, Dlingo, Kec. Mojosongo, Kabupaten Boyolali, Jawa Tengah 57322",
+    coordinates: [-7.5042041475310715, 110.64307374893913],
+    type: "Balai Dusun",
+  },
+  {
+    id: 23,
+    category: "pemerintahan",
+    name: "Balai Dusun Kidul",
+    description: "Tempat pertemuan warga dan kegiatan dusun wilayah selatan.",
+    address: "Dusun Kidul, Desa Dlingo",
+    coordinates: [-7.4718, 110.5900],
+    type: "Balai Dusun",
+  },
 
   // // ===== EKONOMI =====
   // {
