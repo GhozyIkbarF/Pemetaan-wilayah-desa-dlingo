@@ -1,0 +1,239 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 0 16px 0 12px;
+  background: rgba(15, 25, 35, 0.98);
+  border-bottom: 1px solid rgba(126, 207, 255, 0.12);
+  backdrop-filter: blur(20px);
+  z-index: 1100;
+  gap: 16px;
+  flex-shrink: 0;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.menuBtn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 36px;
+  height: 36px;
+  background: rgba(126, 207, 255, 0.07);
+  border: 1px solid rgba(126, 207, 255, 0.15);
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 8px;
+  transition: all 0.25s ease;
+  flex-shrink: 0;
+}
+
+.menuBtn:hover {
+  background: rgba(126, 207, 255, 0.15);
+  border-color: rgba(126, 207, 255, 0.3);
+}
+
+.menuLine {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: #7ecfff;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+.menuLine.open:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.menuLine.open:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.menuLine.open:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brandIcon {
+  font-size: 24px;
+  filter: drop-shadow(0 0 8px rgba(126, 207, 255, 0.5));
+}
+
+.brandText {
+  display: flex;
+  flex-direction: column;
+}
+
+.brandTitle {
+  font-size: 15px;
+  font-weight: 800;
+  color: #f0f4f8;
+  letter-spacing: 0.3px;
+  line-height: 1.2;
+}
+
+.brandSubtitle {
+  font-size: 10px;
+  color: rgba(126, 207, 255, 0.7);
+  letter-spacing: 0.3px;
+  line-height: 1.4;
+}
+
+.center {
+  flex: 1;
+  max-width: 400px;
+}
+
+.searchWrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 0 12px;
+  height: 36px;
+  transition: all 0.25s ease;
+}
+
+.searchWrapper.focused {
+  border-color: rgba(126, 207, 255, 0.4);
+  background: rgba(126, 207, 255, 0.07);
+  box-shadow: 0 0 0 3px rgba(126, 207, 255, 0.08);
+}
+
+.searchIcon {
+  color: rgba(240, 244, 248, 0.4);
+  flex-shrink: 0;
+  transition: color 0.2s;
+}
+
+.searchWrapper.focused .searchIcon {
+  color: #7ecfff;
+}
+
+.searchInput {
+  flex: 1;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 13px;
+  color: #f0f4f8;
+  font-family: inherit;
+}
+
+.searchInput::placeholder {
+  color: rgba(240, 244, 248, 0.35);
+}
+
+.clearBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: rgba(240, 244, 248, 0.4);
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: color 0.2s;
+}
+
+.clearBtn:hover {
+  color: #7ecfff;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.villageInfo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.villageInfoItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.infoLabel {
+  font-size: 9px;
+  color: rgba(126, 207, 255, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+.infoValue {
+  font-size: 12px;
+  font-weight: 600;
+  color: #f0f4f8;
+}
+
+.divider {
+  width: 1px;
+  height: 28px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  background: rgba(45, 106, 79, 0.2);
+  border: 1px solid rgba(45, 106, 79, 0.4);
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #52b788;
+  letter-spacing: 0.5px;
+}
+
+.badgeDot {
+  width: 6px;
+  height: 6px;
+  background: #52b788;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.8); }
+}
+
+@media (max-width: 900px) {
+  .villageInfo {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .brandSubtitle {
+    display: none;
+  }
+  .center {
+    max-width: 200px;
+  }
+}
