@@ -138,17 +138,17 @@ export default function GoogleMapComponent({
   // Gabungkan MAP_OPTIONS dengan restriction jika bounds tersedia
   const mapOptions = bounds
     ? {
-        ...MAP_OPTIONS,
-        restriction: {
-          latLngBounds: {
-            south: bounds.south,
-            north: bounds.north,
-            west:  bounds.west,
-            east:  bounds.east,
-          },
-          strictBounds: false, // boleh sedikit keluar agar tidak terasa kaku
+      ...MAP_OPTIONS,
+      restriction: {
+        latLngBounds: {
+          south: bounds.south,
+          north: bounds.north,
+          west: bounds.west,
+          east: bounds.east,
         },
-      }
+        strictBounds: false, // boleh sedikit keluar agar tidak terasa kaku
+      },
+    }
     : MAP_OPTIONS;
 
   return (
@@ -164,8 +164,8 @@ export default function GoogleMapComponent({
           map.fitBounds({
             south: bounds.south,
             north: bounds.north,
-            west:  bounds.west,
-            east:  bounds.east,
+            west: bounds.west,
+            east: bounds.east,
           });
         }
       }}
@@ -173,12 +173,12 @@ export default function GoogleMapComponent({
     >
       <GoogleBoundaryLayer boundary={boundary} />
 
-      <GoogleMarkerLayer
+      {/* <GoogleMarkerLayer
         locations={locations}
         categories={categories}
         selectedLocation={selectedLocation}
         onSelectLocation={onSelectLocation}
-      />
+      /> */}
     </GoogleMapContainer>
   );
 }
