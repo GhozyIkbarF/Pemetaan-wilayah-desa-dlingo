@@ -119,6 +119,10 @@
 }
 
 @media (max-width: 768px) {
+  .content {
+    padding-top: 60px;
+  }
+  
   .statsOverlay {
     display: none;
   }
