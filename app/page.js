@@ -80,16 +80,16 @@ export default function Home() {
           searchQuery={searchQuery}
         />
         <div className={styles.mapWrapper}>
-          <MapComponent
+          {/* <MapComponent
             center={VILLAGE_CENTER}
             locations={filteredLocations}
             boundary={VILLAGE_BOUNDARY}
             categories={CATEGORIES}
             selectedLocation={selectedLocation}
             onSelectLocation={setSelectedLocation}
-          />
+          /> */}
 
-          {/* <GoogleMapComponent
+          <GoogleMapComponent
             center={VILLAGE_CENTER}
             locations={filteredLocations}
             boundary={VILLAGE_BOUNDARY}
@@ -97,8 +97,8 @@ export default function Home() {
             categories={CATEGORIES}
             selectedLocation={selectedLocation}
             onSelectLocation={setSelectedLocation}
-          /> */}
-          
+          />
+
           {/* Statistik overlay di pojok kanan bawah */}
           <div className={styles.statsOverlay}>
             <div className={styles.statsTitle}>📊 Statistik Desa</div>
