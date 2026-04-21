@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { MapContainer, TileLayer, useMap } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import MarkerLayer from "./MarkerLayer";
@@ -25,12 +25,21 @@ export default function MapComponent({
   selectedLocation,
   onSelectLocation,
 }) {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 768);
+    handleResize(); // Set initial value
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <MapContainer
       center={center}
       zoom={15}
       style={{ width: "100%", height: "100%" }}
-      zoomControl={true}
+      zoomControl={!isMobile}
       id="leaflet-map"
     >
       {/* Basemap OpenStreetMap */}
