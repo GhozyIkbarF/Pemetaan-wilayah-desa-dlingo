@@ -1,0 +1,26 @@
+# Compiled output
+.next/
+out/
+
+# Dependencies
+node_modules/
+
+# Environment files — supply these via docker-compose / CI secrets
+.env
+.env.*
+
+# Git
+.git/
+.gitignore
+
+# Dev tooling
+.eslintrc*
+eslint.config.mjs
+README.md
+AGENTS.md
+CLAUDE.md
+
+# Docker files (avoid recursive copy)
+Dockerfile
+docker-compose*.yml
+.dockerignore
