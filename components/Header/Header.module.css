@@ -234,6 +234,6 @@
     display: none;
   }
   .center {
-    max-width: 200px;
+    display: none;
   }
 }

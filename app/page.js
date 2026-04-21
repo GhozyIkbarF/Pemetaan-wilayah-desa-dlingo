@@ -98,6 +98,7 @@ export default function Home() {
             selectedLocation={selectedLocation}
             onSelectLocation={setSelectedLocation}
           /> */}
+          
           {/* Statistik overlay di pojok kanan bawah */}
           <div className={styles.statsOverlay}>
             <div className={styles.statsTitle}>📊 Statistik Desa</div>

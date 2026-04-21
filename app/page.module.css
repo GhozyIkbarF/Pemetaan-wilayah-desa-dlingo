@@ -10,6 +10,7 @@
   display: flex;
   flex: 1;
   overflow: hidden;
+  position: relative;
 }
 
 .mapWrapper {
@@ -118,9 +119,7 @@
 
 @media (max-width: 768px) {
   .statsOverlay {
-    bottom: 16px;
-    right: 8px;
-    min-width: 150px;
+    display: none;
   }
   
   .statsGrid {
