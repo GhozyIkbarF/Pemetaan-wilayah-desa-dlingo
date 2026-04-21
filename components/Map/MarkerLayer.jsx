@@ -16,6 +16,7 @@ function createCustomIcon(category, isSelected = false) {
     kesehatan: { emoji: "🏥", color: "#c0392b", bg: "#fde8e8" },
     pemerintahan: { emoji: "🏛️", color: "#e67e22", bg: "#fef3cd" },
     ekonomi: { emoji: "🏪", color: "#8e44ad", bg: "#f3e5f5" },
+    pemakaman: { emoji: "⚰️", color: "#6c757d", bg: "#f8f9fa" },  
   };
 
   const config = iconMap[category] || { emoji: "📍", color: "#7ecfff", bg: "#e3f5ff" };
