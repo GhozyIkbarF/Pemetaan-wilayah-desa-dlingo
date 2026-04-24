@@ -70,27 +70,42 @@ jobs:
     steps:
       - name: Deploy via SSH
         uses: appleboy/ssh-action@v1.0.3
+        env:
+          DOCKER_IMAGE: ${{ env.DOCKER_IMAGE }}
+          CONTAINER_NAME: ${{ env.CONTAINER_NAME }}
+          DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
+          DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          port: ${{ secrets.SSH_PORT }}            # default 22
+          port: ${{ secrets.SSH_PORT }}
+          envs: DOCKER_IMAGE,CONTAINER_NAME,DOCKERHUB_USERNAME,DOCKERHUB_TOKEN
           script: |
-            # Pull image terbaru dari Docker Hub
-            docker pull ${{ env.DOCKER_IMAGE }}:latest
+            # 1. Pindah ke direktori project di server dan update kode (agar sinkron dengan GitHub)
+            cd /root/pemetaan-wilayah/Pemetaan-wilayah-desa-dlingo || cd ~/pemetaan-wilayah/Pemetaan-wilayah-desa-dlingo
+            git fetch --all
+            git reset --hard origin/main
+            git pull origin main
 
-            # Stop & remove container lama (jika ada)
-            docker stop ${{ env.CONTAINER_NAME }} || true
-            docker remove ${{ env.CONTAINER_NAME }} || true
+            # 2. Login ke Docker Hub di server (penting jika repository image private)
+            echo "$DOCKERHUB_TOKEN" | docker login -u "$DOCKERHUB_USERNAME" --password-stdin
 
-            # Jalankan container baru
+            # 3. Pull image terbaru dari Docker Hub
+            docker pull $DOCKER_IMAGE:latest
+
+            # 4. Stop & remove container lama (jika ada)
+            docker stop $CONTAINER_NAME || true
+            docker remove $CONTAINER_NAME || true
+
+            # 5. Jalankan container baru
             docker run -d \
-              --name ${{ env.CONTAINER_NAME }} \
+              --name $CONTAINER_NAME \
               --restart unless-stopped \
               -p 3000:3000 \
               -e NODE_ENV=production \
               -e PORT=3000 \
-              ${{ env.DOCKER_IMAGE }}:latest
+              $DOCKER_IMAGE:latest
 
-            # Hapus image lama yang tidak dipakai (housekeeping)
+            # 6. Hapus image lama yang tidak dipakai (housekeeping)
             docker image prune -f
