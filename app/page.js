@@ -80,7 +80,7 @@ export default function Home() {
           searchQuery={searchQuery}
         />
         <div className={styles.mapWrapper}>
-          //map OSRM
+          {/* map OSRM */}
           <MapComponent
             center={VILLAGE_CENTER}
             locations={filteredLocations}
@@ -89,7 +89,7 @@ export default function Home() {
             selectedLocation={selectedLocation}
             onSelectLocation={setSelectedLocation}
           />
-          //map google
+          {/* map google */}
           {/* <GoogleMapComponent
             center={VILLAGE_CENTER}
             locations={filteredLocations}
