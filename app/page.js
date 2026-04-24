@@ -81,16 +81,16 @@ export default function Home() {
         />
         <div className={styles.mapWrapper}>
           {/* map OSRM */}
-          <MapComponent
+          {/* <MapComponent
             center={VILLAGE_CENTER}
             locations={filteredLocations}
             boundary={VILLAGE_BOUNDARY}
             categories={CATEGORIES}
             selectedLocation={selectedLocation}
             onSelectLocation={setSelectedLocation}
-          />
+          /> */}
           {/* map google */}
-          {/* <GoogleMapComponent
+          <GoogleMapComponent
             center={VILLAGE_CENTER}
             locations={filteredLocations}
             boundary={VILLAGE_BOUNDARY}
@@ -98,7 +98,7 @@ export default function Home() {
             categories={CATEGORIES}
             selectedLocation={selectedLocation}
             onSelectLocation={setSelectedLocation}
-          /> */}
+          />
 
           {/* Statistik overlay di pojok kanan bawah */}
           <div className={styles.statsOverlay}>
